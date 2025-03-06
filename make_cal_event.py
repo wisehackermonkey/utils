@@ -3,6 +3,7 @@ import sys
 import datetime
 import urllib.parse
 import pyperclip
+import webbrowser
 from anthropic import Anthropic
 
 # Set up Anthropic API credentials
@@ -155,12 +156,20 @@ def main():
     print("\nGoogle Calendar URL:")
     print(calendar_url)
     
-    # Copy URL to clipboard
+    # Copy URL to clipboard and open in browser
     try:
         pyperclip.copy(calendar_url)
         print("\nURL copied to clipboard!")
     except:
         pass
+    
+    # Open URL in default web browser
+    try:
+        import webbrowser
+        print("Opening URL in web browser...")
+        webbrowser.open(calendar_url)
+    except Exception as e:
+        print(f"Error opening URL in browser: {e}")
 
 if __name__ == "__main__":
     main()
