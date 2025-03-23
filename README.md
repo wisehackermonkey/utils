@@ -20,9 +20,15 @@ This script takes event information (from text, clipboard, or a file), parses it
    ```
 
 3. Set your Anthropic API key as an environment variable:
-   ```
-   export ANTHROPIC_API_KEY=your_api_key_here
-   ```
+**On macOS/Linux:**
+```bash
+export ANTHROPIC_API_KEY=your_api_key_here
+```
+
+**On Windows (PowerShell):**
+```powershell
+$env:ANTHROPIC_API_KEY="your_api_key_here"
+```
 
 ## Usage
 
