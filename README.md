@@ -42,7 +42,7 @@ python event_to_gcal.py
 python event_to_gcal.py event_info.txt
 
 # Parse directly provided text
-python event_to_gcal.py "Cinnamon Rools, Thursday Mar 6 at 7:00pm, 123 Event St San Francisco, CA"
+python openai_event_to_gcal.py "Cinnamon Rools, Thursday Mar 6 at 7:00pm, 123 Event St San Francisco, CA"
 ```
 
 The script will:
